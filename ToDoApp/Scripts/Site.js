@@ -6,3 +6,7 @@
             console.log("Error");
     })
 }
+
+function ClearContent() {
+        $('#ContentID').html('');
+}
