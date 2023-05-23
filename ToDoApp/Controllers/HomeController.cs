@@ -28,5 +28,10 @@ namespace ToDoApp.Controllers
         {
             return View();
         }
+
+        public ActionResult Save(FormViewModel model)
+        {
+            return View("Success");
+        }
     }
 }
