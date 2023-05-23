@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using ToDoApp.Models;
 
-namespace ToDoApp
+namespace ToDoApp.Helpers
 {
-    public class DataHelper
+    public static class DataHelper
     {
         const int YEARS_DISTANCE = 5;
 
@@ -23,7 +23,7 @@ namespace ToDoApp
 
         private static IEnumerable<ComboBoxItem> CalculateYears(DateTime date)
         {
-            for (var i = 0; i <= 2 * YEARS_DISTANCE + 1; i++) {
+            for (var i = 1; i <= 2 * YEARS_DISTANCE; i++) {
                 yield return new ComboBoxItem {
                     ID = i.ToString(),
                     Name = (date.Year - YEARS_DISTANCE + i).ToString()

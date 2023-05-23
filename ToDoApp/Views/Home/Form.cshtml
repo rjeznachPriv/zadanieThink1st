@@ -1,1 +1,4 @@
-﻿
+﻿@model ToDoApp.Models.FormViewModel
+
+
+@Html.DropDownListFor(m => m.ComboBoxItems, Model.ComboBoxItems.Select(i => new SelectListItem { Value = i.ID, Text = i.FullName}), "Select year")
