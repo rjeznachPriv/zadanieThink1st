@@ -22,3 +22,10 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.custom-button {
+    width: 200px!important; /*Wiem ze important to nie najlepsza praktyka, ale w zadaniu jest napisane ze klasa ma zmienic wyglad przycisku. Zakladam ze nie wolno mi w zadaniu 1 modyfikowac stylu elementu inline*/
+    height: 30px!important;
+    background-color: darkseagreen!important;
+    border: 2px dashed red!important;
+}
