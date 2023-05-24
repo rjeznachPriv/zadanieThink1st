@@ -122,6 +122,7 @@
     <Compile Include="Helpers\DataHelper.cs" />
     <Compile Include="Models\ComboBoxItem.cs" />
     <Compile Include="Models\FormViewModel.cs" />
+    <Compile Include="Models\StudentViewModel.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using ToDoApp.Models;
 
@@ -26,12 +23,20 @@ namespace ToDoApp.Controllers
 
         public ActionResult Student()
         {
-            return View();
+            return View(new StudentViewModel());
         }
 
         public ActionResult Save(FormViewModel model)
         {
             return View("Success");
+        }
+
+        public ActionResult SaveStudent(StudentViewModel model)
+        {
+            ModelState.Clear();
+            model.Id = model.Id ?? Guid.NewGuid().ToString();
+
+            return TryValidateModel(model) ? View("Success") : View("Student", model);
         }
     }
 }
